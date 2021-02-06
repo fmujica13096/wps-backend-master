@@ -2,8 +2,6 @@ package com.walmart.product.search.service;
 
 import com.walmart.product.search.business.Constants;
 import com.walmart.product.search.business.Product;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,13 +9,8 @@ import java.util.List;
 
 @Service(Constants.PRODUCT_IMPLEMENTATION_DUMMY)
 public class ProductServiceDummy implements ProductService {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ProductServiceDummy.class);
     @Override
     public List<Product> search(String query) {
-
-        LOGGER.info("*****  ENTRO *****");
-
         List<Product> productList = new ArrayList<>();
         Product product = getProduct("https://www.lider.cl/catalogo/images/bedRoomIcon.svg", 1, "Demo Brand1", "Demo Product1", 123);
         Product product2 = getProduct("https://www.lider.cl/catalogo/images/toysIcon.svg", 2, "Demo Brand2", "Demo Product2", 124);
