@@ -18,6 +18,8 @@ public class ProductServiceDummy implements ProductService {
 
         LOGGER.info("*****  ENTRO *****");
 
+        System.out.println("*****  FERNANDO *****");
+
         List<Product> productList = new ArrayList<>();
         Product product = getProduct("https://www.lider.cl/catalogo/images/bedRoomIcon.svg", 1, "Demo Brand1", "Demo Product1", 123);
         Product product2 = getProduct("https://www.lider.cl/catalogo/images/toysIcon.svg", 2, "Demo Brand2", "Demo Product2", 124);
